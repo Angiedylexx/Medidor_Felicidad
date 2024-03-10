@@ -6,12 +6,12 @@ class Base(DeclarativeBase):
     pass
 
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "user_app"
     id: Mapped[int] = mapped_column(Integer, autoincrement=True, primary_key=True)
     name: Mapped[str] = mapped_column(String(15))
     last_name: Mapped[str] = mapped_column(String(15))
     numbers: Mapped[list[int]] = mapped_column(ARRAY(Integer))
-    addres: Mapped[str] = mapped_column(String(20), nullable=True)
+    address: Mapped[str] = mapped_column(String(20), nullable=True)
     
 Base.metadata.create_all(db_engine)
 

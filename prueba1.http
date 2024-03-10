@@ -8,9 +8,9 @@ Content-Type: application/json
 {
   "name": "Nuevo Usuario",
   "last_name": "Apellido Nuñez",
-  "numbers": 35,
-  "addres": "Calle Falsa 123"
+  "numbers": [321706706,313301359],
+  "address": "call"
 }
 
 ### Probar la ruta GET "/users/<user_id>" (obtener usuario por ID)
-GET http://localhost:5000/users/1
+GET http://localhost:5000/users/8
